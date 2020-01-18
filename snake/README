@@ -1,0 +1,5 @@
+---/-----------/---
+SNAKE - Wobbly apple eating simulator
+/-/-/-/
+The classic, on C. Use the Arrow Keys to move! You can loop around the board and eat apples, but if you bite yourself, you'll do like ouroboros!
+Compile with make. Can do either *windows* or *unix*.

@@ -10,3 +10,7 @@ Personal script for bootstrapping a Void Linux install into what I will basicall
 
 ## Rock-Paper-Scissors (Jokenpo)
 The classic luck-based struggle to beat a thing with the other in *Lua*.
+
+## Snake
+Another classic, the apple-eating action game all the kids love.
+*Uses SDL2 in C.*

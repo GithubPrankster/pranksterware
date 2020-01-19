@@ -35,12 +35,15 @@ int main(int argc, char *argv[]){
     window = SDL_CreateWindow("Snake", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, SDL_WINDOW_SHOWN);
     if(window == NULL){
         fprintf(stderr, "Could not initialize SDL2's window!\n%s\n", SDL_GetError());
+        SDL_Quit();
         return -1;
     }
 
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     if(renderer == NULL){
         fprintf(stderr, "Could not initialize SDL2's renderer!\n%s\n", SDL_GetError());
+        SDL_DestroyWindow(window);
+        SDL_Quit();
         return -1;
     }
 
@@ -160,5 +163,6 @@ int main(int argc, char *argv[]){
 
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
+    SDL_Quit();
     return 0;
 }

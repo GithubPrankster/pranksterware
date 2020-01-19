@@ -1,8 +1,8 @@
-CC = gcc
+CC = g++
 CCX = -s -O3 -m64 -static-libgcc
 
 windows:
-	$(CC) $(CCX) unfortune.c -o unfortune.exe
+	$(CC) $(CCX) unfortune.cpp -o unfortune.exe
 
 unix:
-	$(CC) $(CCX) unfortune.c -o unfortune
+	$(CC) $(CCX) unfortune.cpp -o unfortune
